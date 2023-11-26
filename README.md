@@ -4,8 +4,14 @@ PyTorch implementation of paper "Entangled View-Epipolar Information Aggregation
 
 [paper](https://arxiv.org/abs/2311.11845)
 
-<center class="half">
-    <img src="assets/desk.gif" width="43%">    <img src="assets/horns.gif" width="43%">
+
+<center>
+<figure>
+<<img src="assets/desk.gif" width="45%" />
+·
+·
+<img src="assets/horns.gif" width="45%" />
+</figure>
 </center>
 
 
