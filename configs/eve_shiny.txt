@@ -1,0 +1,32 @@
+### INPUT
+expname = eve_shiny _test
+rootdir = ./
+render_stride = 1
+distributed = False
+
+## dataset
+train_dataset = shiny
+train_scenes = cd  
+eval_dataset = shiny
+eval_scenes = [cd, crest, food, giants, lab, pasta, seasoning, tools]
+
+### TRAINING
+N_rand = 682
+lrate_feature = 0.0002
+lrate_eve = 0.0001
+lrate_decay_factor = 0.5
+lrate_decay_steps = 50000
+trans_depth = 4
+num_source_views = 10
+
+### TESTING
+chunk_size = 500
+
+### RENDERING
+N_samples = 192
+inv_uniform = True
+
+### CONSOLE AND TENSORBOARD
+i_img = 50000
+i_print = 100
+i_weights = 50000

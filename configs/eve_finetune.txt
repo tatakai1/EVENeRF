@@ -1,0 +1,36 @@
+### INPUT
+expname = eve_finetune_fern
+rootdir = ./
+ckpt_path = ./out/eve_full/model_250000.pth
+no_reload = False
+render_stride = 1
+distributed = True
+no_load_opt = True
+no_load_scheduler = True
+n_iters = 80000
+
+## dataset
+train_dataset = llff_test
+train_scenes = fern
+eval_dataset = llff_test
+eval_scenes = fern
+
+### TRAINING
+N_rand = 682
+lrate_feature = 0.0001
+lrate_eve = 0.00005
+lrate_decay_factor = 0.5
+lrate_decay_steps = 20000
+trans_depth = 4
+
+### TESTING
+chunk_size = 500
+
+### RENDERING
+N_samples = 88
+inv_uniform = True
+
+### CONSOLE AND TENSORBOARD
+i_img = 20000
+i_print = 100
+i_weights = 10000
