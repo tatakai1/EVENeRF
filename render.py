@@ -53,11 +53,8 @@ def img2video(args):
         out_frame = image[crop_h:h - crop_h, crop_w:w - crop_w, :]
         out_frames.append(out_frame)
     out_dir = os.path.join(out_folder, "{}.mp4".format(args.expname))
+    print("saved video to {}".format(out_dir))
     imageio.mimwrite(out_dir, out_frames, fps=30, quality=8)
-
-    
-
-
 
 @torch.no_grad()
 def render(args):
@@ -179,3 +176,5 @@ if __name__ == "__main__":
         synchronize()
 
     render(args)
+
+    img2video(args)
