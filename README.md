@@ -79,3 +79,15 @@ You can use render.py to render videos for the real forward-facing scenes as fol
 ```Shell
 python3 render.py --config configs/eve_llff.txt --eval_dataset llff_render --eval_scenes horns --expname eve_finetune_horns
 ```
+
+## BibTeX
+
+```bibtex
+@inproceedings{min2024entangled, 
+  title={Entangled View-Epipolar Information Aggregation for Generalizable Neural Radiance Fields},
+  author={Min, Zhiyuan and Luo, Yawei and Yang, Wei and Wang, Yuesong and Yang, Yi},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4906--4916},
+  year={2024}
+}
+```
